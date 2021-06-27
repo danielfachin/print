@@ -9,11 +9,10 @@
 	<script type="text/javascript">
 		var ref = location.href.split("="); //index.html?variavel=valor; 0: antes do "=; 1: depois do "="
 		var auxValorRef = ref[1];
-		
-		
-var replaceSpace = auxValorRef.replace(/20%/g, " ");
-var replaceParagraph = replaceSpace.replace(/21%/g, "!");
-var replaceA1 = replaceParagraph.replace(/22%/g, """);
+		var replaceSpace = (/20%/g, " ");
+var replaceParagraph = replace".replace(/%0A/g, "<br>");
+var replaceAA = replaceSpace.replace(/21%/g, "!");
+var replaceA1 = replaceAA.replace(/22%/g, """);
 var replaceA2 = replaceA1.replace(/23%/g, "#");
 var replaceA3 = replaceA2.replace(/24%/g, "$");
 var replaceA4 = replaceA3.replace(/25%/g, "%");
@@ -236,7 +235,6 @@ var replaceZ9 = replaceZ8.replace(/%C3%BD/g, "ý");
 var replaceYY = replaceZ9.replace(/%C3%BE/g, "þ");
 var replaceZZ = replaceYY.replace(/%C3%BF/g, "ÿ");
 var replaceXX = replaceZZ.replace(/&mcp_token/g, ".");
-
 		document.getElementById("valorRef").innerHTML = replaceXX;
 		window.onload = function() { window.print(); }
 	</script>
