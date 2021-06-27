@@ -238,7 +238,7 @@ var replaceZZ = replaceYY.replace(/%C3%BF/g, "ÿ");
 var replaceXX = replaceZZ.replace(/&mcp_token/g, ".");
 
 		document.getElementById("valorRef").innerHTML = replaceXX;
-		window.onload = function() { window.print(); window.close();}
+		window.onload = function() { window.print(); }
 	</script>
 </html>
 
