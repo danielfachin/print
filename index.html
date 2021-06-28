@@ -5,7 +5,6 @@
 	</head>
 	<body>
       	<p id='valorRef' style = "margin: 5px auto; font-size: 2vh;"></p>
-	</body>
 	<script type="text/javascript">
 		var ref = location.href.split("="); //index.html?variavel=valor; 0: antes do "=; 1: depois do "="
 		var auxValorRef = ref[1];
@@ -237,5 +236,6 @@ var replaceZZ = replaceYY.replace(/%C3%BF/g, "ÿ");
 var replaceXX = replaceZZ.replace(/&mcp_token/g, ".");
 		document.getElementById("valorRef").innerHTML = replaceXX;
 		window.onload = function() { window.print(); window.close();}
-	</script>
+		</script>
+		</body>
 </html>
