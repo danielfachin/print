@@ -11,7 +11,8 @@
 		var auxValorRef = ref[1];
 		var replaceSpace = auxValorRef.replace(/%20/g, " ");
 		var replaceParagraph = replaceSpace.replace(/%0A/g, "<br>");
-		var replaceN3 = replaceParagraph.replace(/%21/g, "!");
+		var replaceN2 = replaceParagraph.replace(/%21/g, "!");
+		var replaceN3 = replaceN2.replace(/%F0%9F%92%B0/g, "💰");
 		var replaceN4 = replaceN3.replace(/%C5%BE/g, "ž");
 		var replaceN5 = replaceN4.replace(/%C5%B8/g, "Ÿ");
 		var replaceN6 = replaceN5.replace(/%C2%A0/g, "");
