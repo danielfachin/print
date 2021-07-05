@@ -14,8 +14,8 @@
 		var replaceParagraph = replaceSpace.replace(/%0A/g, "<br>");
 		var replaceAA = replaceParagraph.replace(/%21/g, "!");
 		var replaceA1 = replaceAA.replace(/%22/g, """);
-		var replaceA2 = replaceA1.replace(/%23/g, "#");
-		var replaceA3 = replaceA2.replace(/%24/g, "$");
+		var replaceBB = replaceA1.replace(/%23/g, "#");
+		var replaceA3 = replaceBB.replace(/%24/g, "$");
 
 		var replaceXX = replaceA3.replace(/&mcp_token/g, ".");
 
