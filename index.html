@@ -11,7 +11,7 @@
 		var auxValorRef = ref[1];
 		
 		var replaceSpace = auxValorRef.replace(/%20/g, " ");
-		var replaceParagraph = replaceSpace.replace(/%25_%25/g, "<br>");
+		var replaceParagraph = replaceSpace.replace(/%0A/g, "<br>");
 		var replaceA1 = replaceParagraph.replace(/%C3%A0/g, "à");
 		var replaceA2 = replaceA1.replace(/%C3%A1/g, "á");
 		var replaceA3 = replaceA2.replace(/%C3%A2/g, "â");
