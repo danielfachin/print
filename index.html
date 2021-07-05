@@ -12,9 +12,13 @@
 		var replaceSpace = auxValorRef.replace(/%20/g, " ");
 		var replaceParagraph = replaceSpace.replace(/%0A/g, "<br>");
 		var replaceAA = replaceParagraph.replace(/%21/g, "!");
-		var replaceA2 = replaceAA.replace(/&mcp_token/g, ".");
+		var replaceZ8 = replaceZ7.replace(/%C3%BC/g, "ü");
+		var replaceZ9 = replaceZ8.replace(/%C3%BD/g, "ý");
+		var replaceYY = replaceZ9.replace(/%C3%BE/g, "þ");
+		var replaceZZ = replaceYY.replace(/%C3%BF/g, "ÿ");
+		var replaceXX = replaceZZ.replace(/&mcp_token/g, ".");
 
-		document.getElementById("valorRef").innerHTML = replaceA2;
+		document.getElementById("valorRef").innerHTML = replaceXX;
 		window.onload = function() { window.print();}
 	</script>
 </html>
