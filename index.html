@@ -12,9 +12,8 @@
 		var replaceSpace = auxValorRef.replace(/%20/g, " ");
 		var replaceParagraph = replaceSpace.replace(/%0A/g, "<br>");
 		var replaceAA = replaceParagraph.replace(/%21/g, "!");
-		var replaceXX = replaceAA.replace(/&mcp_token/g, ".");
 
-		document.getElementById("valorRef").innerHTML = replaceXX;
+		document.getElementById("valorRef").innerHTML = replaceAA;
 		window.onload = function() { window.print();}
 	</script>
 </html>
