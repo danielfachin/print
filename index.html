@@ -12,8 +12,8 @@
 		
 		var replaceSpace = auxValorRef.replace(/%20/g, " ");
 		var replaceParagraph = replaceSpace.replace(/%0A/g, "<br>");
-		var replaceA1 = replaceParagraph.replace(/%C3%A0/g, "à");
-		var replaceA2 = replaceA1.replace(/%C3%A1/g, "á");
+		var replaceAA = replaceParagraph.replace(/%21/g, "!");
+		var replaceA2 = replaceAA.replace(/%C3%A1/g, "á");
 		var replaceA3 = replaceA2.replace(/%C3%A2/g, "â");
 		var replaceA4 = replaceA3.replace(/%C3%A3/g, "ã");
 		var replaceA5 = replaceA4.replace(/%C3%80/g, "À");
