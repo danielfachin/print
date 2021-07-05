@@ -13,7 +13,7 @@
 		var replaceParagraph = replaceSpace.replace(/%0A/g, "<br>");
 		var replaceAA = replaceParagraph.replace(/%21/g, "!");
 
-		document.getElementById("valorRef").innerHTML = auxValorRef;
+		document.getElementById("valorRef").innerHTML = replaceAA;
 		window.onload = function() { window.print();}
 	</script>
 </html>
