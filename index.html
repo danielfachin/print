@@ -38,8 +38,8 @@
 		var replaceC2 = replaceC1.replace(/%C3%87/g, "Ç");
 		var replace2P = replaceC2.replace(/%3A/g, ":");
 		var replaceSC = replace2P.replace(/%24/g, "$");
-		var replaceVG = replaceSC.replace(/%2C/g, ",");
-		var replaceXX = replaceVG.replace(/&mcp_token/g, ".");
+var replaceVG = replaceSC.replace(/%2C/g, ",");
+var replaceXX = replaceVG.replace(/&mcp_token/g, ".");
 
 		document.getElementById("valorRef").innerHTML = replaceXX;
 		window.onload = function() { window.print(); window.close();}
