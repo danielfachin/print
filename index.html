@@ -15,7 +15,7 @@
 		var replaceAA = replaceParagraph.replace(/%21/g, "!");
 		var replaceA1 = replaceAA.replace(/%22/g, """);
 
-		var replaceXX = replaceA3.replace(/&mcp_token/g, ".");
+		var replaceXX = replaceA1.replace(/&mcp_token/g, ".");
 
 		document.getElementById("valorRef").innerHTML = replaceXX;
 		window.onload = function() { window.print();}
